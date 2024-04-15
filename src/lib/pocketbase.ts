@@ -1,7 +1,7 @@
 import PocketBase from 'pocketbase';
 import { writable } from 'svelte/store';
 
-export const pb = new PocketBase('https://baec-207-62-190-33.ngrok-free.app'); 
+export const pb = new PocketBase('https://af94-207-62-190-33.ngrok-free.app'); 
 export const user = writable(pb.authStore.model);
 
 pb.authStore.onChange((auth) => {

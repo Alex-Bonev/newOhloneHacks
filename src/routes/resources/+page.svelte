@@ -33,6 +33,8 @@
         const records = await pb.collection('journal').getFullList({
             filter: `created >= '${now}'`,
         });
+        console.log(pb);
+        console.log(userId);
         console.log(records);
         if (records.length > 0){
           for (const record of records) {
